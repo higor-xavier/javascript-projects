@@ -5,11 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>JavaScript</title>
 		<script type="text/javascript">
+
+			var media = 7
+			var nota = prompt('Digite a nota do aluno:') //Lembrar que esse método retorna uma string
 			
-			if (5 <= 5) {
-				document.write('Entrou dentro do bloco IF (verdadeiro)!')
+			//O fato do retorno ser uma string, faz com que o operador ===(idêntico) seja falso msm que a condição seja numéricamente satisfeita
+			if (nota >= media) { 
+				document.write('Aprovado!')
 			}else{
-				document.write('Entrou dentro do bloco ELSE (falso)!')
+				document.write('Reprovado')
 			}
 
 		</script>
