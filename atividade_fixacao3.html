@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			var nmr =  prompt('Digite um número: ')
+			var ope = prompt('Digite a operação a ser realizada: soma ou subtração')
+			var nmr2 = prompt('Digite um segundo número: ')
+
+			//Convertendo valores recebidos
+			nmr = parseInt(nmr)
+			nmr2 = parseInt(nmr2)
+
+			//Realizando cálculo em função externa e armazenando em res
+			var res = efetuarCalculo(nmr, nmr2, ope)
+
+			//Mostrando resultado ao usuário
+			document.write('O resultado é: ' + res)
+
+			//Função de cálculo
+			function efetuarCalculo(nmr, nmr2, ope){
+				
+				//Variável que armazenará o resultado
+				var resultado
+
+				if (ope == 'soma') {
+					resultado = nmr + nmr2
+				}
+				else if (ope == 'subtração') {
+					resultado = nmr - nmr2
+				}
+				else{
+					resultado = 'inválido! Digite uma operação válida.'
+				}
+
+				return resultado
+			}
+			
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>
