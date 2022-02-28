@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			//var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+			//O for in pode ser utilizado para iterar arrays com índices não sequenciais, como usamos normalmente
+			var listaConvidados = []
+			
+			listaConvidados['a'] = 'Jorge'
+			listaConvidados[10] = 'Jamilton'
+			listaConvidados['zebra'] = 'José'
+			listaConvidados[-1] = 'Ana'
+			listaConvidados[true] = 'Maria'
+
+			console.log(listaConvidados)
+
+			for(var x in listaConvidados){
+				console.log('Índice ' + x + ' Valor ' + listaConvidados[x])
+			}
+		</script>
+
+	</head>
+	<body>
+
+
+
+	</body>
+</html>

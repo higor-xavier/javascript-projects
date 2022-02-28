@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+			var f = function(valor, indice){
+				console.log(valor, indice)
+			}
+
+			//Lembrando que o forEach só trabalha com os índices numéricos e superiores a zero do array
+			listaFuncionarios.forEach(f)
+
+			/*
+			console.log(listaFuncionarios)
+
+			//Uma função de callback deve ser passada como parâmetro do metodo forEach
+			listaFuncionarios.forEach(function(valor, indice, array){
+				console.log('Índice ' + indice + ' Valor ' + valor)
+				if(valor == 'Lucas')
+					array[indice] = 'Um novo valor'
+			})
+
+			console.log(listaFuncionarios)
+			*/
+
+		</script>
+
+	</head>
+	<body>
+
+
+
+	</body>
+</html>
