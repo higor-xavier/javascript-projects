@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+		<script type="text/javascript">
+
+			//Executa uma determinada ação uma vez após o tempo informado
+			//setTimeout(function (){document.write('Teste')}, 2000)
+			//clearTimeout serve para cancelar a execução do setTimeout, como se fosse uma bomba relógio
+
+			//Executa a ação indeterminada vezes dentre aquele intervalo informado
+			var i = 5
+
+			var x = setInterval(function (){
+				document.write(i + '<br>')
+				i --
+				if (i === 0) {
+					//Recarrega a página e reinica a contagem
+					//window.location.reload()
+
+					//Assim que i chegar a zero, usa-se a própria função como parametro para que ela pare de ser executada
+					//Recursividade
+					clearInterval(x)
+				}
+			}, 1000)
+
+		</script>
+
+	</head>
+	<body>
+
+		
+
+	</body>
+</html>
